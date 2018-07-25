@@ -1,35 +1,27 @@
 # README
-CASSAND Gwendoline & CASSAND Nancy
+CASSAND Gwendoline & Nancy
+### Version ruby
 
-Lancer les commandes suivantes:
---------------------------------
-$ bundle install
-$ rails db:migrate
-$ rails db:seed
---------------------------------
+ruby '2.5.1'
 
 
+### Dépendances du système
 
+La Gem Faker est utilisé.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Installation
 
-Things you may want to cover:
+Entrez les commandes suivantes dans votre Terminal.
 
-* Ruby version
-	2.5.1
-* System dependencies
+* **Etape :** Installations des gem
+```
+Bundle install
+```
+```
+Rails db:migrate
+```
+```
+Rails db:seed 
+```
 
-* Configuration
-
-* Database creation
-	rails db:seed
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+puis Ouvrir le fichier 'development.sqlite3' dans votre outil de visualisation de BDD (exemple: 'DB Browser for SQLite')
