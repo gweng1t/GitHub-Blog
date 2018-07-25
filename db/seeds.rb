@@ -10,12 +10,12 @@ require 'faker'
 
 puts "AJOUT DES 10 USERS et des 10 ARTICLES"
 10.times do |i|
-	 # User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email)
-	# Article.create(title: Faker::Lorem.word.capitalize, content: Faker::Movie.quote, user_id: rand(1..10))
+	User.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email)
+	Article.create(title: Faker::Lorem.word.capitalize, content: Faker::Movie.quote, user_id: rand(1..10))
 end
 puts "AJOUT DE 5 CATEGORIE"
 5.times do |i|
-	# Categorie.create(name: Faker::Food.dish)
+	Categorie.create(name: Faker::Food.dish)
 end
 
 
@@ -27,7 +27,7 @@ tour = 1
 	end
 	# puts "TOUR: #{tour}" #pour CATEGORIE
 	# puts "\tI+1: #{i+1}" #pour ARTICLE
-	# Article.find(i+1).update(categorie_id: Categorie.find(tour).id)
+	Article.find(i+1).update(categorie_id: Categorie.find(tour).id)
 end
 
 puts "AJOUT DES 15 COMMENTAIRES"
